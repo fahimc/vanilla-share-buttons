@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+[data-share-container]
+{
+   font-size: 0;
+   text-align:center;
+}
+[data-share] {
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom:5px;
+  margin-right:5px;
+  &::last-child {
+    margin-right:0;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  img {
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    font-size: 12px;
+    display: none;
+    vertical-align: middle;
+    &.show {
+      display: inline-block;
+    }
+  }
+  @media (max-width: 736px){
+  }
+}
