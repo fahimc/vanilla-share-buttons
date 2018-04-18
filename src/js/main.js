@@ -7,7 +7,11 @@ let Sharer = {
       URL: 'data-share-url',
       TITLE: 'data-share-title',
       TEXT: 'data-share-text',
-      SUBJECT: 'data-share-subject'
+      SUBJECT: 'data-share-subject',
+      BG_COLOR: 'data-share-bg-color'
+    },
+    CLASS:{
+      DARK:'bg-dark'
     },
     CSS_ID: 'share_css',
     SOCIAL: {
@@ -106,8 +110,10 @@ let Sharer = {
   setShareButton(element) {
     let socialId = element.getAttribute(this.CONST.ATTRIBUTE.COMPONENT);
     let shareurl = element.getAttribute(this.CONST.ATTRIBUTE.URL);
+    if(!shareurl) shareurl = window.location.href;
     let text = element.getAttribute(this.CONST.ATTRIBUTE.TEXT);
     let showTitle = element.getAttribute(this.CONST.ATTRIBUTE.TITLE);
+    let bgColor = element.getAttribute(this.CONST.ATTRIBUTE.BG_COLOR);
     let socialItem = this.getSocialByKey(socialId);
     if (socialItem) {
 
@@ -120,7 +126,7 @@ let Sharer = {
       if (!showTitle) title = '';
       template = template.replace(/\{title\}/g, title);
       element.innerHTML = template;
-      element.style.backgroundColor = socialItem.color;
+      element.style.backgroundColor = bgColor ? bgColor : socialItem.color;
       if (showTitle) element.querySelector('span').classList.add('show');
     }
   },

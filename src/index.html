@@ -24,55 +24,154 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="/js/share.js" target="_blank">Download</a>
         </li>
       </ul>
     </div>
   </nav>
-  <br>
-  <div class="container">
-    <div class="jumbotron jumbotron-fluid bg-info text-white">
-      <div class="container text-center">
-        <h1 class="display-4  text-white">Share buttons</h1>
-        <p class="lead">Made simple</p>
-        <p class="lead">One js file and easy html syntax</p>
-      </div>
-    </div>
-    <div data-share-container>
-      <div data-share="facebook" data-share-url="http://google.com"></div>
-      <div data-share="twitter" data-share-url="http://google.com"></div>
-      <div data-share="pinterest" data-share-url="http://google.com"></div>
-      <div data-share="linkedin" data-share-url="http://google.com"></div>
-      <div data-share="googleplus" data-share-url="http://google.com"></div>
-      <div data-share="email" data-share-url="http://google.com"></div>
-      <div data-share="whatsapp" data-share-url="http://google.com"></div>
-      <br>
-      <br>
-      <div data-share="facebook" data-share-url="http://google.com" data-share-title="true"></div>
-      <div data-share="twitter" data-share-url="http://google.com" data-share-title="true"></div>
-      <div data-share="pinterest" data-share-url="http://google.com" data-share-title="true"></div>
-      <div data-share="linkedin" data-share-url="http://google.com" data-share-title="true"></div>
-      <div data-share="googleplus" data-share-url="http://google.com" data-share-title="true"></div>
-      <div data-share="email" data-share-url="http://google.com" data-share-title="true" data-share-subject="testing share" data-share-text="hello world"></div>
-      <div data-share="whatsapp" data-share-url="http://google.com" data-share-title="true"></div>
-    </div>
-    <div>
-      <pre><code class="language-markup">
-      &lt;div data-share="facebook" data-share-url="http://google.com"&gt;&lt;/div&gt;
-     </code></pre>
-    </div>
-    <div>
-      <pre><code class="language-markup">
-      &lt;div data-share="facebook" data-share-url="http://google.com" data-share-title="true"&gt;&lt;/div&gt;
-     </code></pre>
+  <div class="jumbotron jumbotron-fluid bg-info text-white">
+    <div class="container text-center">
+      <h1 class="display-4  text-white">Share buttons</h1>
+      <p class="lead">Made simple</p>
+      <p class="lead text-light">One file, no dependencies, easy html syntax and customisable</p>
     </div>
   </div>
+  <div class="container">
+    <div data-share-container>
+      <!--
+      <div data-share="facebook"></div>
+      <div data-share="twitter"></div>
+      <div data-share="pinterest"></div>
+      <div data-share="linkedin"></div>
+      <div data-share="googleplus"></div>
+      <div data-share="email"></div>
+      <div data-share="whatsapp"></div>
+      <div data-share="facebook" data-share-bg-color="#000"></div>
+      <br>
+      <br>
+       -->
+      <div data-share="facebook" data-share-title="true"></div>
+      <div data-share="twitter" data-share-title="true"></div>
+      <div data-share="pinterest" data-share-title="true"></div>
+      <div data-share="linkedin" data-share-title="true"></div>
+      <div data-share="googleplus" data-share-title="true"></div>
+      <div data-share="email" data-share-title="true" data-share-subject="testing share" data-share-text="hello world"></div>
+      <div data-share="whatsapp" data-share-title="true"></div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Available Social Buttons</h5>
+              <p>Here is a list of the social buttons available with this library</p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <span>facebook</span>
+                    <br>
+                    <div data-share="facebook"></div>
+                  </div>
+                  <div class="col">
+                    <span>twitter</span>
+                    <br>
+                    <div data-share="twitter"></div>
+                  </div>
+                  <div class="col">
+                    <span>pinterest</span>
+                    <br>
+                    <div data-share="pinterest"></div>
+                  </div>
+                  <div class="col">
+                    <span>linkedin</span>
+                    <br>
+                    <div data-share="linkedin"></div>
+                  </div>
+                  <div class="col">
+                    <span>google+</span>
+                    <br>
+                    <div data-share="googleplus"></div>
+                  </div>
+                  <div class="col">
+                    <span>whatsapp</span>
+                    <br>
+                    <div data-share="whatsapp"></div>
+                  </div>
+                  <div class="col">
+                    <span>email</span>
+                    <br>
+                    <div data-share="email"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Installation</h5>
+              <p>Download and add the script. Click on the download button on the navigation to get the script.</p>
+              <pre><code class="language-markup">&lt;script type="text/javascript" src="js/share.js"&gt;&lt;/script&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Usage</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Basic</h6>
+              <p class="card-text">Here is an example of adding a facebook button to a page. In this example the button will automatically get the url from the page.</p>
+              <p>Add the markup and specify 'facebook' in the 'data-share' attribute.</p>
+              <p>You need the container div and you can add as many buttons as you like within it.</p>
+              <p>below is a list to values you can use to change the type of button.</p>
+              <ul>
+                <li>facebook</li>
+                <li>twitter</li>
+                <li>pinterest</li>
+                <li>linkedin</li>
+                <li>googleplus</li>
+                <li>whatsapp</li>
+                <li>email</li>
+              </ul>
+              <pre><code class="language-markup">&lt;div data-share-container&gt;
+ &lt;div data-share="facebook" &gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <h6>Output</h6>
+              <div data-share-container style="text-align:left;">
+                <div data-share="facebook"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Usage</h5>
+              <h6 class="card-subtitle mb-2 text-muted">With title</h6>
+              <p class="card-text">You can show the label of the button using the following data attribute (data-share-title="true").</p>
+              <pre><code class="language-markup">&lt;div data-share-container&gt;
+  &lt;div data-share="googleplus" data-share-title="true"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <h6>Output</h6>
+              <div data-share-container style="text-align:left;">
+                <div data-share="googleplus" data-share-title="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
 </body>
 
 </html>

@@ -91,12 +91,12 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/**/*.js'],
-        tasks: ['dist', 'copy-css-to-js']
+        tasks: ['dist']
 
       },
       sass: {
         files: ['src/**/*.scss'],
-        tasks: ['sass', 'copy-css-to-js']
+        tasks: ['dist']
 
       },
       html: {
@@ -124,8 +124,8 @@ module.exports = function(grunt) {
     updateJS(true);
   });
 
-  grunt.registerTask('dist', ['clean:dist', 'copy:resource', 'sass','cssmin', 'copy:src', 'browserify']);
-  grunt.registerTask('default', ['dist', 'copy-css-to-js', 'connect', 'watch']);
+  grunt.registerTask('dist', ['clean:dist', 'copy:resource', 'sass','cssmin', 'copy:src', 'browserify','copy-css-to-js']);
+  grunt.registerTask('default', ['dist', 'connect', 'watch']);
   grunt.registerTask('release', ['dist', 'copy:release', 'copy-css-to-js-release']);
 
 
