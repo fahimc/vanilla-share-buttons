@@ -101,7 +101,7 @@ module.exports = function(grunt) {
       },
       html: {
         files: ['src/**/*.html'],
-        tasks: ['copy:src']
+        tasks: ['copy:src', 'copy-css-to-js']
 
       }
     }

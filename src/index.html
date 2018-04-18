@@ -3,6 +3,8 @@
 
 <head>
   <title>Vanilla Share buttons</title>
+  <link rel="stylesheet" type="text/css" href="resource/lib/prism.css">
+  <script type="text/javascript" src="resource/lib/prism.js"></script>
   <script type="text/javascript" src="js/share.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -39,6 +41,7 @@
       <div class="container text-center">
         <h1 class="display-4  text-white">Share buttons</h1>
         <p class="lead">Made simple</p>
+        <p class="lead">One js file and easy html syntax</p>
       </div>
     </div>
     <div data-share-container>
@@ -58,14 +61,16 @@
       <div data-share="googleplus" data-share-url="http://google.com" data-share-title="true"></div>
       <div data-share="email" data-share-url="http://google.com" data-share-title="true" data-share-subject="testing share" data-share-text="hello world"></div>
       <div data-share="whatsapp" data-share-url="http://google.com" data-share-title="true"></div>
-
-      <div data-share="custom" data-share-url="http://google.com" style="
-    background-color: red;
-">
-        <div class="icon icons8-whatsapp" style="
-">
-      </div>
     </div>
+    <div>
+      <pre><code class="language-markup">
+      &lt;div data-share="facebook" data-share-url="http://google.com"&gt;&lt;/div&gt;
+     </code></pre>
+    </div>
+    <div>
+      <pre><code class="language-markup">
+      &lt;div data-share="facebook" data-share-url="http://google.com" data-share-title="true"&gt;&lt;/div&gt;
+     </code></pre>
     </div>
   </div>
 </body>

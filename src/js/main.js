@@ -13,19 +13,19 @@ let Sharer = {
     SOCIAL: {
       FACEBOOK: {
         id: 'facebook',
-        icon: 'icons8-facebook-logo.png',
+        icon: 'icons8-facebook-logo',
         color: '#3B5998',
         url: 'https://www.facebook.com/sharer.php?u={url}'
       },
       TWITTER: {
         id: 'twitter',
-        icon: 'icons8-twitter.png',
+        icon: 'icons8-twitter',
         color: '#00aced',
         url: 'https://twitter.com/share?url={url}&text={text}'
       },
       PINTEREST: {
         id: 'pinterest',
-        icon: 'icons8-pinterest-filled.png',
+        icon: 'icons8-pinterest-filled',
         color: '#bd081c',
         url: `
         javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());
@@ -33,33 +33,33 @@ let Sharer = {
       },
       LINKEDIN: {
         id: 'linkedin',
-        icon: 'icons8-linkedin-2-filled.png',
+        icon: 'icons8-linkedin-2-filled',
         color: '#007bb5',
         url: 'https://www.linkedin.com/shareArticle?mini=true&url={url}'
       },
       GOOGLE_PLUS: {
         id: 'googleplus',
         title: 'google+',
-        icon: 'icons8-google-plus.png',
+        icon: 'icons8-google-plus',
         color: '#db4437',
         url: 'https://plus.google.com/share?url={url}&text={text}'
       },
       EMAIL: {
         id: 'email',
-        icon: 'icons8-email-envelope.png',
+        icon: 'icons8-email-envelope',
         color: '#03a5f0',
         url: 'mailto:?Subject={subject}&Body={body}'
       },
       WHATSAPP: {
         id: 'whatsapp',
-        icon: 'icons8-whatsapp.png',
+        icon: 'icons8-whatsapp',
         color: '#25d366',
         url: 'whatsapp://send?text={url}'
       }
     },
     TEMPLATE: `
     <a href="{url}" target="_blank">
-    <img src="resource/image/{icon}" alt="{alt}">
+    <div class="icon {icon}"></div>
     <span>{title}</span>
     </a>
     `
