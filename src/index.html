@@ -156,6 +156,37 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Usage</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Basic All Button</h6>
+              <p class="card-text">Here is an example of adding all buttons to a page. In this example the button will automatically get the url from the page.</p>
+              <pre><code class="language-markup">&lt;div data-share-container&gt;
+  &lt;div data-share="facebook" data-share-title="true"&gt;&lt;/div&gt;
+  &lt;div data-share="twitter" data-share-title="true"&gt;&lt;/div&gt;
+  &lt;div data-share="pinterest" data-share-title="true"&gt;&lt;/div&gt;
+  &lt;div data-share="linkedin" data-share-title="true"&gt;&lt;/div&gt;
+  &lt;div data-share="googleplus" data-share-title="true"&gt;&lt;/div&gt;
+  &lt;div data-share="email" data-share-title="true" data-share-subject="testing share" data-share-text="hello world"&gt;&lt;/div&gt;
+  &lt;div data-share="whatsapp" data-share-title="true"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+              <h6>Output</h6>
+              <div data-share-container style="text-align:left;">
+                <div data-share="facebook" data-share-title="true"></div>
+                <div data-share="twitter" data-share-title="true"></div>
+                <div data-share="pinterest" data-share-title="true"></div>
+                <div data-share="linkedin" data-share-title="true"></div>
+                <div data-share="googleplus" data-share-title="true"></div>
+                <div data-share="email" data-share-title="true" data-share-subject="testing share" data-share-text="hello world"></div>
+                <div data-share="whatsapp" data-share-title="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Usage</h5>
               <h6 class="card-subtitle mb-2 text-muted">With title</h6>
               <p class="card-text">You can show the label of the button using the following data attribute (data-share-title="true").</p>
               <pre><code class="language-markup">&lt;div data-share-container&gt;
@@ -164,6 +195,62 @@
               <h6>Output</h6>
               <div data-share-container style="text-align:left;">
                 <div data-share="googleplus" data-share-title="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Usage</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Custom URL</h6>
+              <p class="card-text">You can set the url for the share button by passing it in via the data-share-url attribute</p>
+              <pre><code class="language-markup">&lt;div data-share-container&gt;
+  &lt;div data-share="pinterest" data-share-url="http://google.com" data-share-title="true"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <h6>Output</h6>
+              <div data-share-container style="text-align:left;">
+                <div data-share="pinterest" data-share-url="http://google.com" data-share-title="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Usage</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Add Share message</h6>
+              <p class="card-text">Some buttons have the ability to add a share message. You can use the data-share-text attribute to add the text. </p>
+              <pre><code class="language-markup">&lt;div data-share-container&gt;
+  &lt;div data-share="twitter" data-share-text="hello world" data-share-title="true"&gt;&lt;/div&gt;
+  &lt;div data-share="googleplus" data-share-text="hello world" data-share-title="true"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <h6>Output</h6>
+              <div data-share-container style="text-align:left;">
+                <div data-share="twitter" data-share-text="hello world" data-share-title="true"></div>
+                <div data-share="googleplus" data-share-text="hello world" data-share-title="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Usage</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Email attributes</h6>
+              <p class="card-text">For the email button you can pass in the subject and the body content via data attributes, data-share-subject and data-share-text</p>
+              <pre><code class="language-markup">&lt;div data-share-container&gt;
+  &lt;div data-share="email" data-share-subject="this is the subject" data-share-text="hello world" data-share-title="true"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <h6>Output</h6>
+              <div data-share-container style="text-align:left;">
+                <div data-share="email" data-share-subject="this is the subject" data-share-text="hello world" data-share-title="true"></div>
               </div>
             </div>
           </div>
